@@ -1,0 +1,176 @@
+<!doctype html>
+<!--
+  PARA PERSONALIZAR (procure e troque):
+  1. "Vitrine Local"      -> o nome da sua marca
+  2. "5515998548388"      -> seu WhatsApp com DDI+DDD, só números (ex.: 5511987654321)
+  3. Preços na seção #precos
+-->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vitrine Local · Sites para negócios</title>
+<meta name="description" content="Sites profissionais para pequenos negócios, prontos em até 3 dias, com botão de WhatsApp e mapa.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#ffffff;--soft:#f5f7fb;--ink:#0f172a;--muted:#5b6475;--line:#e5e8ef;--brand:#2b59ff;--brand2:#7c3aed;--ok:#16a34a}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Plus Jakarta Sans",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+  header{position:sticky;top:0;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;height:66px}
+  .logo{font-weight:800;font-size:20px;display:flex;align-items:center;gap:8px}
+  .logo .dot{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,var(--brand),var(--brand2))}
+  nav a{margin-left:22px;color:var(--muted);font-weight:500;font-size:15px}
+  nav a:hover{color:var(--brand)}
+  .btn{display:inline-block;background:var(--brand);color:#fff;font-weight:700;padding:14px 26px;border-radius:10px;transition:.2s}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(43,89,255,.3)}
+  .btn.light{background:#fff;color:var(--ink);border:1px solid var(--line)}
+  .hero{padding:90px 0 70px;text-align:center;background:radial-gradient(ellipse at top,#eef2ff,transparent 60%)}
+  .pill{display:inline-block;background:#eef2ff;color:var(--brand);font-weight:700;font-size:13px;padding:6px 14px;border-radius:999px}
+  .hero h1{font-size:clamp(38px,6vw,64px);line-height:1.08;font-weight:800;margin:18px auto;max-width:820px;letter-spacing:-1px}
+  .hero h1 span{background:linear-gradient(90deg,var(--brand),var(--brand2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p{color:var(--muted);font-size:19px;max-width:620px;margin:0 auto 32px}
+  .hero .actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .checks{display:flex;gap:22px;justify-content:center;flex-wrap:wrap;margin-top:34px;color:var(--muted);font-size:14px;font-weight:500}
+  .checks span::before{content:"✓ ";color:var(--ok);font-weight:800}
+  section{padding:84px 0}
+  h2{font-size:clamp(30px,4.5vw,42px);font-weight:800;letter-spacing:-.5px;text-align:center}
+  .sub{color:var(--muted);text-align:center;margin:8px auto 46px;max-width:600px}
+  .problem{background:var(--soft)}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+  .stat{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px}
+  .stat b{font-size:34px;color:var(--brand);display:block;font-weight:800}
+  .stat p{color:var(--muted)}
+  .works{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+  .work{border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.2s;background:#fff}
+  .work:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(15,23,42,.08)}
+  .frame{height:220px;overflow:hidden;position:relative;border-bottom:1px solid var(--line);background:var(--soft)}
+  .frame iframe{width:1280px;height:880px;border:0;transform:scale(.25);transform-origin:0 0;pointer-events:none}
+  @media (min-width:380px){.frame iframe{transform:scale(.27)}}
+  .work .body{padding:20px}
+  .work h3{font-size:18px}
+  .work p{color:var(--muted);font-size:14px;margin:4px 0 14px}
+  .work a.link{color:var(--brand);font-weight:700;font-size:14px}
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+  .step{padding:26px;border-radius:16px;background:var(--soft)}
+  .step .n{width:40px;height:40px;border-radius:10px;background:var(--brand);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+  .step p{color:var(--muted);font-size:15px}
+  .plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:22px;align-items:stretch}
+  .plan{border:1px solid var(--line);border-radius:18px;padding:30px;display:flex;flex-direction:column;background:#fff}
+  .plan.hot{border:2px solid var(--brand);box-shadow:0 20px 40px rgba(43,89,255,.12);position:relative}
+  .plan.hot::before{content:"Mais escolhido";position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--brand);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:999px}
+  .plan h3{font-size:20px}
+  .plan .price{font-size:40px;font-weight:800;margin:10px 0 2px}
+  .plan .price small{font-size:15px;color:var(--muted);font-weight:500}
+  .plan .note{color:var(--muted);font-size:14px;margin-bottom:18px}
+  .plan ul{list-style:none;margin-bottom:24px;flex:1}
+  .plan li{padding:7px 0;font-size:15px;border-bottom:1px dashed var(--line)}
+  .plan li::before{content:"✓ ";color:var(--ok);font-weight:800}
+  .plan .btn{text-align:center}
+  .faq{max-width:760px;margin:0 auto}
+  details{border-bottom:1px solid var(--line);padding:18px 0}
+  summary{font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between}
+  summary::after{content:"+";color:var(--brand);font-size:22px;line-height:1}
+  details[open] summary::after{content:"–"}
+  details p{color:var(--muted);margin-top:10px}
+  .final{background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;text-align:center;border-radius:24px;margin:0 20px 60px;padding:70px 20px}
+  .final h2{color:#fff}
+  .final p{opacity:.9;margin:10px auto 28px;max-width:520px}
+  .final .btn{background:#fff;color:var(--brand)}
+  footer{text-align:center;color:var(--muted);font-size:14px;padding:0 0 40px}
+  .wa{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,.2);z-index:20}
+  .wa svg{width:30px;height:30px;fill:#fff}
+  @media (max-width:700px){nav{display:none}section{padding:64px 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="logo" href="#"><span class="dot"></span>Vitrine Local</a>
+  <nav><a href="#trabalhos">Trabalhos</a><a href="#como">Como funciona</a><a href="#precos">Preços</a><a href="#duvidas">Dúvidas</a></nav>
+</div></header>
+
+<section class="hero"><div class="wrap">
+  <span class="pill">Sites para negócios de todo o Brasil</span>
+  <h1>Seu negócio merece ser <span>encontrado no Google</span></h1>
+  <p>Crio sites profissionais para pequenos negócios de qualquer lugar do Brasil, em até 3 dias, com botão de WhatsApp, mapa, horários e tudo o que o cliente precisa para te chamar.</p>
+  <div class="actions">
+    <a class="btn" href="https://wa.me/5515998548388?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20site." target="_blank">Quero meu site</a>
+    <a class="btn light" href="#trabalhos">Ver exemplos</a>
+  </div>
+  <div class="checks"><span>Pronto em até 3 dias</span><span>Funciona no celular</span><span>Sem mensalidade obrigatória</span></div>
+</div></section>
+
+<section class="problem"><div class="wrap">
+  <h2>Só o Instagram não basta</h2>
+  <p class="sub">Quem procura um serviço no Google quer ver preço, horário e um jeito fácil de chamar. Sem site, esse cliente vai para o concorrente.</p>
+  <div class="stats">
+    <div class="stat"><b>Google</b><p>É onde a maioria das pessoas pesquisa antes de escolher um comércio local.</p></div>
+    <div class="stat"><b>1 clique</b><p>Do site direto para o seu WhatsApp, com a mensagem já escrita.</p></div>
+    <div class="stat"><b>24 horas</b><p>Seu site trabalha mostrando seus serviços até com a loja fechada.</p></div>
+  </div>
+</div></section>
+
+<section id="trabalhos"><div class="wrap">
+  <h2>Trabalhos de exemplo</h2>
+  <p class="sub">Clique para ver cada site funcionando, inclusive no celular.</p>
+  <div class="works">
+    <div class="work"><div class="frame"><iframe src="exemplos/barbearia/" title="Barbearia" loading="lazy" tabindex="-1"></iframe></div>
+      <div class="body"><h3>Barbearia Navalha de Ouro</h3><p>Visual escuro e elegante, tabela de preços e agendamento pelo WhatsApp.</p><a class="link" href="exemplos/barbearia/" target="_blank">Ver site →</a></div></div>
+    <div class="work"><div class="frame"><iframe src="exemplos/confeitaria/" title="Confeitaria" loading="lazy" tabindex="-1"></iframe></div>
+      <div class="body"><h3>Doce Ateliê Confeitaria</h3><p>Cardápio com preços, passo a passo de encomenda e depoimentos.</p><a class="link" href="exemplos/confeitaria/" target="_blank">Ver site →</a></div></div>
+    <div class="work"><div class="frame"><iframe src="exemplos/oficina/" title="Oficina" loading="lazy" tabindex="-1"></iframe></div>
+      <div class="body"><h3>Auto Center Pistão</h3><p>Lista de serviços e formulário de orçamento que já vai pronto para o WhatsApp.</p><a class="link" href="exemplos/oficina/" target="_blank">Ver site →</a></div></div>
+  </div>
+</div></section>
+
+<section id="como" style="padding-top:0"><div class="wrap">
+  <h2>Como funciona</h2><p class="sub">Você não precisa entender nada de tecnologia.</p>
+  <div class="steps">
+    <div class="step"><div class="n">1</div><h3>Conversa</h3><p>Você me manda logo, fotos, serviços e horários pelo WhatsApp.</p></div>
+    <div class="step"><div class="n">2</div><h3>Prévia</h3><p>Em até 3 dias te mostro o site pronto para você aprovar.</p></div>
+    <div class="step"><div class="n">3</div><h3>Ajustes</h3><p>Mudamos o que você quiser até ficar do seu jeito.</p></div>
+    <div class="step"><div class="n">4</div><h3>No ar</h3><p>Publico o site com seu endereço (ex.: seunegocio.com.br).</p></div>
+  </div>
+</div></section>
+
+<section id="precos" style="background:var(--soft)"><div class="wrap">
+  <h2>Preços simples</h2><p class="sub">Pagamento facilitado: 50% para começar e 50% na entrega, via Pix.</p>
+  <div class="plans">
+    <div class="plan"><h3>Essencial</h3><div class="price">R$ 400</div><div class="note">pagamento único</div>
+      <ul><li>Site de 1 página</li><li>Serviços e preços</li><li>Botão de WhatsApp</li><li>Mapa e horários</li><li>Funciona no celular</li></ul>
+      <a class="btn light" href="https://wa.me/5515998548388?text=Quero%20o%20plano%20Essencial" target="_blank">Escolher</a></div>
+    <div class="plan hot"><h3>Profissional</h3><div class="price">R$ 800</div><div class="note">pagamento único</div>
+      <ul><li>Tudo do Essencial</li><li>Galeria de fotos</li><li>Cardápio ou catálogo</li><li>Formulário de orçamento</li><li>Configuração do Google Meu Negócio</li></ul>
+      <a class="btn" href="https://wa.me/5515998548388?text=Quero%20o%20plano%20Profissional" target="_blank">Escolher</a></div>
+    <div class="plan"><h3>Manutenção</h3><div class="price">R$ 50<small>/mês</small></div><div class="note">opcional</div>
+      <ul><li>Troca de preços e fotos</li><li>Novas promoções</li><li>Site sempre no ar</li><li>Suporte pelo WhatsApp</li></ul>
+      <a class="btn light" href="https://wa.me/5515998548388?text=Quero%20saber%20da%20manuten%C3%A7%C3%A3o" target="_blank">Saber mais</a></div>
+  </div>
+  <p class="sub" style="margin:26px auto 0;font-size:14px">Domínio próprio (.com.br) custa cerca de R$ 40 por ano, pago direto no Registro.br, no nome do seu negócio.</p>
+</div></section>
+
+<section id="duvidas"><div class="wrap">
+  <h2>Dúvidas frequentes</h2><p class="sub"></p>
+  <div class="faq">
+    <details><summary>Preciso pagar mensalidade?</summary><p>Não. A hospedagem básica é gratuita. A manutenção mensal é opcional, para quem quer que eu atualize o site sempre.</p></details>
+    <details><summary>Quanto tempo demora?</summary><p>A primeira prévia fica pronta em até 3 dias úteis depois que você me manda as informações.</p></details>
+    <details><summary>E se eu não gostar?</summary><p>Fazemos ajustes até você aprovar. O pagamento final só acontece na entrega.</p></details>
+    <details><summary>O site aparece no Google?</summary><p>Sim. Configuro o site para ser encontrado e, no plano Profissional, também deixo seu Google Meu Negócio apontando para ele.</p></details>
+    <details><summary>Eu consigo mudar o site depois?</summary><p>Com a manutenção, basta me mandar uma mensagem. Sem ela, cobro por alteração avulsa.</p></details>
+  </div>
+</div></section>
+
+<div class="final">
+  <h2>Vamos colocar seu negócio na internet?</h2>
+  <p>Me chama no WhatsApp e eu te mostro uma prévia de como o seu site pode ficar, sem compromisso.</p>
+  <a class="btn" href="https://wa.me/5515998548388?text=Ol%C3%A1!%20Quero%20uma%20pr%C3%A9via%20do%20meu%20site." target="_blank">Pedir minha prévia grátis</a>
+</div>
+<footer>© Vitrine Local · Os sites de exemplo são de negócios fictícios.</footer>
+
+<a class="wa" href="https://wa.me/5515998548388" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 .9c.3.1.5.2.5.3.1.2.1.7-.1 1.4z"/></svg></a>
+</body>
+</html>
