@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auto Center Pistão</title>
+<meta name="description" content="Mecânica geral, revisão, freios e suspensão. Orçamento grátis pelo WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#0d1b2a;--navy2:#1b2d45;--ink:#14202e;--muted:#5c6b7a;--bg:#f4f6f8;--orange:#ff7a1a;--line:#dfe4ea}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:Roboto,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+  .top{background:var(--orange);color:#fff;font-size:14px;font-weight:500;text-align:center;padding:8px}
+  header{background:var(--navy);color:#fff}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;height:68px}
+  .logo{font-family:Oswald;font-size:26px;font-weight:700;letter-spacing:1px;text-transform:uppercase}
+  .logo span{color:var(--orange)}
+  nav a{margin-left:24px;font-size:14px;opacity:.8}
+  nav a:hover{opacity:1;color:var(--orange)}
+  .btn{display:inline-block;background:var(--orange);color:#fff;font-weight:700;padding:14px 26px;border-radius:4px;text-transform:uppercase;font-size:14px;letter-spacing:.5px;transition:.2s}
+  .btn:hover{background:#e86a0d}
+  .btn.out{background:transparent;border:2px solid #fff}
+  .hero{background:linear-gradient(120deg,var(--navy) 55%,var(--navy2));color:#fff;padding:90px 0;position:relative;overflow:hidden}
+  .hero::after{content:"⚙";position:absolute;right:-60px;top:-40px;font-size:420px;opacity:.06;line-height:1}
+  .hero h1{font-family:Oswald;font-size:clamp(40px,6.5vw,76px);text-transform:uppercase;line-height:1.05;max-width:720px}
+  .hero h1 span{color:var(--orange)}
+  .hero p{opacity:.8;font-size:18px;max-width:540px;margin:20px 0 32px}
+  .hero .actions{display:flex;gap:12px;flex-wrap:wrap}
+  .trust{background:#fff;border-bottom:1px solid var(--line)}
+  .trust .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;padding:28px 20px}
+  .trust div{display:flex;gap:12px;align-items:center;font-weight:500}
+  .trust i{font-style:normal;font-size:28px}
+  section{padding:80px 0}
+  h2{font-family:Oswald;font-size:clamp(32px,5vw,46px);text-transform:uppercase}
+  h2 span{color:var(--orange)}
+  .sub{color:var(--muted);margin:4px 0 40px}
+  .svcs{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+  .svc{background:#fff;border:1px solid var(--line);border-top:4px solid var(--orange);padding:26px;border-radius:4px}
+  .svc .ic{font-size:32px}
+  .svc h3{font-family:Oswald;font-size:20px;text-transform:uppercase;margin:10px 0 6px}
+  .svc p{color:var(--muted);font-size:14px}
+  .form-sec{background:var(--navy);color:#fff}
+  .form-sec .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+  .form-sec p{opacity:.8}
+  form{background:#fff;color:var(--ink);padding:28px;border-radius:6px;display:grid;gap:12px}
+  label{font-size:13px;font-weight:700}
+  input,select,textarea{width:100%;padding:12px;border:1px solid var(--line);border-radius:4px;font:inherit}
+  form .btn{border:0;cursor:pointer;width:100%}
+  .reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+  .rev{background:#fff;padding:24px;border-radius:4px;border:1px solid var(--line)}
+  .rev .s{color:var(--orange)}
+  .rev small{color:var(--muted);font-weight:700}
+  footer{background:var(--navy);color:#9fb0c2;padding:40px 0;font-size:14px}
+  footer .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+  footer b{color:#fff;display:block;margin-bottom:6px}
+  .wa{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,.3)}
+  .wa svg{width:30px;height:30px;fill:#fff}
+  @media (max-width:760px){nav{display:none}.form-sec .wrap{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="top">🔧 Orçamento sem compromisso · Garantia de 90 dias em todos os serviços</div>
+<header><div class="wrap">
+  <a class="logo" href="#">Auto Center <span>Pistão</span></a>
+  <nav><a href="#servicos">Serviços</a><a href="#orcamento">Orçamento</a><a href="#avaliacoes">Avaliações</a></nav>
+</div></header>
+
+<section class="hero"><div class="wrap">
+  <h1>Seu carro em <span>boas mãos</span>, sem enrolação.</h1>
+  <p>Mecânica geral com diagnóstico honesto, preço justo e prazo cumprido. Mostramos as peças trocadas e explicamos tudo.</p>
+  <div class="actions">
+    <a class="btn" href="https://wa.me/5515998548388?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento." target="_blank">Orçamento no WhatsApp</a>
+    <a class="btn out" href="#servicos">Nossos serviços</a>
+  </div>
+</div></section>
+
+<div class="trust"><div class="wrap">
+  <div><i>🛡️</i>Garantia de 90 dias</div>
+  <div><i>⏱️</i>Revisão em até 1 dia</div>
+  <div><i>💳</i>Até 6x no cartão</div>
+  <div><i>⭐</i>4,8 no Google</div>
+</div></div>
+
+<section id="servicos"><div class="wrap">
+  <h2>Nossos <span>serviços</span></h2><p class="sub">Atendemos carros nacionais e importados.</p>
+  <div class="svcs">
+    <div class="svc"><div class="ic">🛢️</div><h3>Troca de óleo</h3><p>Óleo e filtros com checagem completa de 20 itens.</p></div>
+    <div class="svc"><div class="ic">🛑</div><h3>Freios</h3><p>Pastilhas, discos e fluido. Segurança em primeiro lugar.</p></div>
+    <div class="svc"><div class="ic">🔩</div><h3>Suspensão</h3><p>Amortecedores, buchas e alinhamento.</p></div>
+    <div class="svc"><div class="ic">💻</div><h3>Injeção eletrônica</h3><p>Diagnóstico com scanner e limpeza de bicos.</p></div>
+    <div class="svc"><div class="ic">❄️</div><h3>Ar-condicionado</h3><p>Higienização, carga de gás e reparo.</p></div>
+    <div class="svc"><div class="ic">📋</div><h3>Revisão completa</h3><p>Pré-viagem ou conforme o manual do fabricante.</p></div>
+  </div>
+</div></section>
+
+<section id="orcamento" class="form-sec"><div class="wrap">
+  <div>
+    <h2>Peça seu <span>orçamento</span></h2>
+    <p>Preencha os dados e a mensagem já vai pronta para o nosso WhatsApp. Respondemos rapidinho.</p>
+  </div>
+  <form id="f">
+    <div><label for="nome">Seu nome</label><input id="nome" required></div>
+    <div><label for="carro">Carro e ano</label><input id="carro" placeholder="Ex.: Onix 2019" required></div>
+    <div><label for="serv">Serviço</label>
+      <select id="serv"><option>Revisão</option><option>Freios</option><option>Suspensão</option><option>Troca de óleo</option><option>Ar-condicionado</option><option>Outro / não sei</option></select></div>
+    <div><label for="obs">O que está acontecendo?</label><textarea id="obs" rows="3"></textarea></div>
+    <button class="btn" type="submit">Enviar pelo WhatsApp</button>
+  </form>
+</div></section>
+
+<section id="avaliacoes"><div class="wrap">
+  <h2>O que dizem <span>nossos clientes</span></h2><p class="sub">Avaliações reais do Google</p>
+  <div class="reviews">
+    <div class="rev"><div class="s">★★★★★</div><p>“Honestos demais. Outra oficina queria trocar tudo, aqui resolveram só com o necessário.”</p><small>Fernanda L.</small></div>
+    <div class="rev"><div class="s">★★★★★</div><p>“Deixei de manhã e busquei à tarde. Preço justo.”</p><small>Paulo H.</small></div>
+    <div class="rev"><div class="s">★★★★★</div><p>“Explicaram tudo e mostraram as peças velhas. Confiança total.”</p><small>Ricardo A.</small></div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div><b>Auto Center Pistão</b>Site de demonstração (negócio fictício)</div>
+  <div><b>Endereço</b>Av. Industrial, 1.500 – Vila Nova</div>
+  <div><b>Horário</b>Seg a sex 8h–18h · Sáb 8h–12h</div>
+</div></footer>
+
+<a class="wa" href="https://wa.me/5515998548388" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 .9c.3.1.5.2.5.3.1.2.1.7-.1 1.4z"/></svg></a>
+<script>
+  document.getElementById('f').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var v = function (id) { return document.getElementById(id).value; };
+    var msg = 'Olá! Meu nome é ' + v('nome') + '. Carro: ' + v('carro') + '. Serviço: ' + v('serv') + '. ' + v('obs');
+    window.open('https://wa.me/5515998548388?text=' + encodeURIComponent(msg), '_blank');
+  });
+</script>
+</body>
+</html>
